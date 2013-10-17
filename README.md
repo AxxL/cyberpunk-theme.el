@@ -3,6 +3,26 @@ Cyberpunk Theme
 
 Cyberpunk color theme for the emacs 24+ built-in color theme support known loosely as <code>deftheme</code>. The theme is <i>mostly</i> a direct port of the [overtone/emacs-live](https://github.com/overtone/emacs-live) theme of the same name (designed originally for the <code>color-theme</code> package). Many mode-specific customizations, listed below, have also been added.
 
+
+Forked from https://github.com/n3mo/cyberpunk-theme.el
+======================================================
+
+Changes in this fork:
+
+* org-document-title (default font height)
+* org-checkbox (removed style)
+* org-done (removed box)
+* org-todo (removed box)
+* org-level-1 (default font height)
+* org-level-2 (default font height)
+* org-level-2 (default font height)
+
+Before: cyberpunk_n3mo.png
+After: cyberpunk_axxl.png
+
+This code is NOT available via MELPA but [the original version from n3mo](https://github.com/n3mo/cyberpunk-theme.el) is.
+
+
 Installation
 ============
 
@@ -17,29 +37,29 @@ Ensure that cyberpunk-theme.el is on the custom-theme-load-path like this:
 
 You can then load the theme at any time by running the command <code>M-x load-theme RET cyberpunk</code>.
 
-Package.el
-----------
+<!-- Package.el -->
+<!-- ---------- -->
 
-Cyberpunk is available in [MELPA](http://melpa.milkbox.net/). This installation method assumes that you have added MELPA to your package archive list. This can be accomplished in your init file with the following command:
+<!-- Cyberpunk is available in [MELPA](http://melpa.milkbox.net/). This installation method assumes that you have added MELPA to your package archive list. This can be accomplished in your init file with the following command: -->
 
-```lisp
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
-```
+<!-- ```lisp -->
+<!-- (add-to-list 'package-archives -->
+<!--              '("melpa" . "http://melpa.milkbox.net/packages/") t) -->
+<!-- ``` -->
 
-Once set up, you can install <code>cyberpunk</code> using the following command:
+<!-- Once set up, you can install <code>cyberpunk</code> using the following command: -->
 
-<pre>
-M-x package-install cyberpunk-theme
-</pre>
+<!-- <pre> -->
+<!-- M-x package-install cyberpunk-theme -->
+<!-- </pre> -->
 
-or, by alternatively running the command <code>list-packages</code>, marking the cyberpunk-theme package with the command "i" and running the execute execute command "x".
+<!-- or, by alternatively running the command <code>list-packages</code>, marking the cyberpunk-theme package with the command "i" and running the execute execute command "x". -->
 
-If you want cyberpunk-theme to be set at startup, add the following line to your .emacs init file:
+<!-- If you want cyberpunk-theme to be set at startup, add the following line to your .emacs init file: -->
 
-```lisp
-(load-theme 'cyberpunk t)
-```
+<!-- ```lisp -->
+<!-- (load-theme 'cyberpunk t) -->
+<!-- ``` -->
 
 Specific Modes
 ==============

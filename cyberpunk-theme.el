@@ -4,7 +4,8 @@
 
 ;; Author: Nicholas M. Van Horn <vanhorn.nm@gmail.com>
 ;; Keywords: color theme cyberpunk
-;; Version: 1.4
+;; Version: 20130807.1135
+;; X-Original-Version: 1.4
 
 ;; This file is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -497,7 +498,8 @@
    `(mumamo-background-chunk-submode4 ((,class (:background ,cyberpunk-bg+1))))
 
    ;; org-mode
-   `(org-document-title ((,class (:foreground ,cyberpunk-blue-3 :background ,cyberpunk-black :weight bold :height 1.5))))
+   ;; `(org-document-title ((,class (:foreground ,cyberpunk-blue-3 :background ,cyberpunk-black :weight bold :height 1.5))))
+   `(org-document-title ((,class (:foreground ,cyberpunk-blue-3 :background ,cyberpunk-black :weight bold))))
    `(org-document-info ((,class (:foreground ,cyberpunk-blue-3 :background ,cyberpunk-black :weight bold))))
    `(org-document-info-keyword ((,class (:foreground ,cyberpunk-gray-2 :background ,cyberpunk-black))))
    `(org-agenda-date-today
@@ -505,16 +507,21 @@
    `(org-agenda-structure
      ((,class (:inherit font-lock-comment-face))))
    `(org-archived ((,class (:slant italic))))
-   `(org-checkbox ((,class (:background ,cyberpunk-gray-2 :foreground ,cyberpunk-black
-                                   :box (:line-width 1 :style released-button)))))
+   ;; `(org-checkbox ((,class (:background ,cyberpunk-gray-2 :foreground ,cyberpunk-black
+   ;;                                 :box (:line-width 1 :style released-button)))))
    `(org-date ((,class (:foreground ,cyberpunk-blue-7 :underline t))))
-   `(org-done ((,class (:bold t :weight bold :foreground ,cyberpunk-green
-                              :box (:line-width 1 :style none)))))
-   `(org-todo ((,class (:bold t :foreground ,cyberpunk-orange :weight bold
-                              :box (:line-width 1 :style none)))))
-   `(org-level-1 ((,class (:foreground ,cyberpunk-pink-1 :height 1.3))))
-   `(org-level-2 ((,class (:foreground ,cyberpunk-yellow :height 1.2))))
-   `(org-level-3 ((,class (:foreground ,cyberpunk-blue-5 :height 1.1))))
+   ;; `(org-done ((,class (:bold t :weight bold :foreground ,cyberpunk-green
+   ;;                            :box (:line-width 1 :style none)))))
+   `(org-done ((,class (:bold t :weight bold :foreground ,cyberpunk-green))))
+   ;; `(org-todo ((,class (:bold t :foreground ,cyberpunk-orange :weight bold
+   ;;                            :box (:line-width 1 :style none)))))
+   `(org-todo ((,class (:bold t :foreground ,cyberpunk-orange :weight bold))))
+   ;; `(org-level-1 ((,class (:foreground ,cyberpunk-pink-1 :height 1.3))))
+   `(org-level-1 ((,class (:foreground ,cyberpunk-pink-1))))
+   ;; `(org-level-2 ((,class (:foreground ,cyberpunk-yellow :height 1.2))))
+   `(org-level-2 ((,class (:foreground ,cyberpunk-yellow))))
+   ;; `(org-level-3 ((,class (:foreground ,cyberpunk-blue-5 :height 1.1))))
+   `(org-level-3 ((,class (:foreground ,cyberpunk-blue-5))))
    `(org-level-4 ((,class (:foreground ,cyberpunk-green))))
    `(org-level-5 ((,class (:foreground ,cyberpunk-orange))))
    `(org-level-6 ((,class (:foreground ,cyberpunk-pink))))
